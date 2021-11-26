@@ -1,0 +1,246 @@
+<head>
+	<style type="text/css">
+		body,html{
+			background-color: rgba(255,255,0,0.3);
+			/*height: 100%;*/
+		}
+		
+		div.background {
+			background-color: rgba(0,255,100,0.3);
+ 			 /*background: url(./img/bg_img.jpeg);*/
+ 			 border: 2px solid black;
+ 			 margin: 1em 1em 1em 1em;
+ 			 /*height: 100%;*/
+		}
+		/*
+		.bg {
+			background-color: rgb(100,1,100);
+			background-image: "/img/bg_img.jpeg";
+			height: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		*/
+	</style>
+</head>
+<!--
+<body>
+	<h1 align="center">Welcome Professor!</h1>
+<h2 align="center"> Code module: {{code_module}}</h2>
+<h2 align="center">Code Presentation(YR-SEM): {{code_presentation}}</h2>
+	<div class="background" align="center">
+	<form method = "POST" action="" >
+	<h3>Student List</h3>
+	<label for="q1_category_label">Order based on:</label>
+	<select name="q1_category">
+		<option>id_student</option>
+		<option>imd_band</option>
+		<option>age_band</option>
+		<option>studied_credits</option>
+	</select>
+	<input type="submit" name="q1_submit">
+	<br>
+		<h3>Query b</h3>
+	<label for="q2_category_label">Result:</label>
+	<select name="q2_category">
+		<option>Distinction</option>
+		<option>Pass</option>
+		<option>Fail</option>
+		<option>Withdrawn</option>
+	</select>
+	<input type="submit" name="q2_submit">
+	<br>
+	<h3>Diversity List </h3>
+	<label for="q3_category_label">Filter:</label>
+	<select name="q3_category1">
+		<option>gender</option>
+		<option>disability</option>
+	</select>
+    <select name="q3_category2">
+		<option>F</option>
+		<option>M</option>
+		<option>Y</option>
+		<option>N</option>
+	</select>
+    <select name="q3_category3">
+		<option>id_student</option>
+		<option>imd_band</option>
+		<option>age_band</option>
+		<option>studied_credits</option>
+	</select>
+	<input type="submit" name="q3_submit">
+    <br>
+	<h3>Student Statistics </h3>
+	<label for="q4_category_label">Filter:</label>
+	<select name="q4_category">
+		<option>gender</option>
+		<option>region</option>
+		<option>disability</option>
+	</select>
+	<input type="submit" name="q4_submit">
+    <br>
+
+	</form>
+
+	<div>
+		<form>
+
+   <br>
+	<h3>Query e</h3>
+	ID of assessment: <input type="number" name="q5_id_assessment">
+	<input type="submit" name="q5_submit">
+    <br>
+	<h3>Query f</h3>
+	ID of student: <input type="number" name="q6_id_student">
+	<input type="submit" name="q6_submit">
+	<br>
+	<h3>Query g</h3>
+	<input type="submit" name="q7_submit" value="Go">
+	<br>
+	<h3>Query h</h3>
+	ID Site: <input type="number" name="q8_id_site">
+	<input type="submit" name="q8_submit">
+	<br>
+	<h3>Query i</h3>
+	<input type="submit" name="q9_submit">
+	<br>
+	<h3>Query k</h3>
+	Cutt-off marks for: <br>
+	TMA: <input type="number" name="q11_tma">
+	CMA: <input type="number" name="q11_cma">
+	Exam: <input type="number" name="q11_exam">
+	<input type="submit" name="q11_submit">
+	<br>
+		</form>
+	</div>
+
+	<div>
+		<form>
+	<h3>Query m</h3>
+	Cutt-off marks for: <br>
+	code_module: <input type="text" name="q13_code_module">
+	code_presentation: <input type="text" name="q13_code_presentation">
+	duration: <input type="number" name="q13_duration">
+	<input type="submit" name="q11_submit">
+	<br>
+	<h3>Query n</h3>
+	Cutt-off marks for: <br>
+	TMA: <input type="number" name="q14_id_assessment">
+	CMA: <input type="text" name="q14_assessment_type">
+	Exam: <input type="number" name="q14_date">
+	Exam: <input type="number" name="q14_weight">
+	<input type="submit" name="q14_submit">
+	<br>
+	<h3>Query o</h3>
+	<input type="submit" name="q15_submit">			
+		</form>
+	</div>
+</body> 
+-->
+
+
+<body>
+<div class="background" align="center">
+<h1>Welcome Professor!</h1>
+<h2 align="center"> Code module: {{code_module}}</h2>
+<h2 align="center">Code Presentation(YR-SEM): {{code_presentation}}</h2>
+<form method = "POST" action="" >
+	<h3>Student List</h3>
+	<label for="q1_category_label">Order based on:</label>
+	<select name="q1_category">
+		<option>id_student</option>
+		<option>imd_band</option>
+		<option>age_band</option>
+		<option>studied_credits</option>
+	</select>
+	<input type="submit" name="q1_submit">
+	<br>
+	<h3>Student Results</h3>
+	<label for="q2_category_label">Result:</label>
+	<select name="q2_category">
+		<option>Distinction</option>
+		<option>Pass</option>
+		<option>Fail</option>
+		<option>Withdrawn</option>
+	</select>
+	<input type="submit" name="q2_submit">
+	<br>
+	<h3>Diversity Lists</h3>
+	<label for="q3_category_label">Filter:</label>
+	<select name="q3_category1">
+		<option>gender</option>
+		<option>disability</option>
+	</select>
+    <select name="q3_category2">
+		<option>F</option>
+		<option>M</option>
+		<option>Y</option>
+		<option>N</option>
+	</select>
+    <select name="q3_category3">
+		<option>id_student</option>
+		<option>imd_band</option>
+		<option>age_band</option>
+		<option>studied_credits</option>
+	</select>
+	<input type="submit" name="q3_submit">
+    <br>
+	<h3>Student Statistics</h3>
+	<label for="q4_category_label">Filter:</label>
+	<select name="q4_category">
+		<option>gender</option>
+		<option>region</option>
+		<option>disability</option>
+	</select>
+	<input type="submit" name="q4_submit">
+    <br>
+	<h3>Student Assessment Results</h3>
+	ID of assessment: <input type="number" name="q5_id_assessment">
+	<input type="submit" name="q5_submit">
+    <br>
+	<h3>Student Details</h3>
+	ID of student: <input type="number" name="q6_id_student">
+	<input type="submit" name="q6_submit">
+	<br>
+	<h3>Student Grades</h3>
+	<input type="submit" name="q7_submit" value="Go">
+	<br>
+	<h3>VLE engagement Statistics</h3>
+	ID Site: <input type="number" name="q8_id_site">
+	<input type="submit" name="q8_submit">
+	<br>
+	<h3>Late Submissions</h3>
+	<input type="submit" name="q9_submit">
+	<br>
+	<h3>Policy Change Effects</h3>
+	Cut-off marks for: <br>
+	TMA: <input type="number" name="q11_tma">
+	CMA: <input type="number" name="q11_cma">
+	Exam: <input type="number" name="q11_exam">
+	<input type="submit" name="q11_submit">
+	<br>
+	<h3>Add New Course</h3>
+	<br>
+	code_module: <input type="text" name="q13_code_module">
+	code_presentation: <input type="text" name="q13_code_presentation">
+	duration: <input type="number" name="q13_duration">
+	<input type="submit" name="q13_submit">
+	<br>
+	<h3>Add new assessment</h3>
+	<br>
+	ID: <input type="number" name="q14_id_assessment">
+	Type(TMA/CMA/Exam): <input type="text" name="q14_assessment_type">
+	deadline: <input type="number" name="q14_date">
+	Weightage: <input type="number" name="q14_weight">
+	<input type="submit" name="q14_submit">
+	<br>
+	<h3>Remove course</h3>
+	<input type="submit" name="q15_submit">
+	<br>
+	<br>
+	<input type="submit" value="Logout" name="back">
+
+</form>
+</div>
+</body> 

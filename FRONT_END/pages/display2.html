@@ -1,0 +1,37 @@
+<form method = "POST" action="" >
+	<input type="submit" value="Back" name="back">
+</form>
+
+<table border=1>
+	<tr>
+		{% for col_title in title %}
+		<td> {{col_title}} </td>
+		{% endfor %}
+	</tr>
+	{% for row in table %}
+	<tr>
+		{% for i in range(num_col) %}
+		<td> {{row[i]}} </td>
+		{% endfor %}
+	</tr>
+	{% endfor %}
+</table>
+
+<br>
+<br>
+
+<table border=1>
+	<tr>
+		{% for col_title in title2 %}
+		<td> {{col_title}} </td>
+		{% endfor %}
+	</tr>
+	{% for row in table2 %}
+	<tr>
+		{% for i in range(num_col2) %}
+		<td> {{row[i]}} </td>
+		{% endfor %}
+	</tr>
+	{% endfor %}
+</table>
+

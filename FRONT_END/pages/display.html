@@ -1,0 +1,57 @@
+<head>
+	<style type="text/css">
+		body,html{
+			background-color: rgba(255,255,0,0.3);
+			/*height: 100%;*/
+		}
+		
+		div.background {
+			background-color: rgba(0,255,100,0.3);
+ 			 /*background: url(./img/bg_img.jpeg);*/
+ 			 border: 2px solid black;
+ 			 margin: 1em 1em 1em 1em;
+ 			 /*height: 100%;*/
+		}
+		/*
+		.bg {
+			background-color: rgb(100,1,100);
+			background-image: "/img/bg_img.jpeg";
+			height: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		*/
+	</style>
+</head>
+<body>
+	<div class="background" align="center">
+<form method = "POST" action="" >
+	<input type="submit" value="Back" name="back">
+
+</form>
+
+<table border=1 class="graph">
+	<thead>
+		<tr>
+		{% for col_title in title %}
+		<th> {{col_title}} </th>
+		{% endfor %}
+		</tr>
+	</thead>
+	<tbody class="horizontal">
+		
+	{% for row in table %}
+	<tr>
+		{% for i in range(num_col) %}
+		<td> {{row[i]}} </td>
+		{% endfor %}
+	</tr>
+	{% endfor %}
+	</tbody>
+
+</table>
+
+<br>
+</div>
+</body>

@@ -1,0 +1,82 @@
+<head>
+	<style type="text/css">
+		body,html{
+			background-color: rgba(255,255,0,0.3);
+			height: 100%;
+		}
+		
+		div.background {
+			background-color: rgba(0,255,100,0.3);
+ 			 /*background: url(./img/bg_img.jpeg);*/
+ 			 border: 2px solid black;
+ 			 height: 100%;
+		}
+		/*
+		.bg {
+			background-color: rgb(100,1,100);
+			background-image: "/img/bg_img.jpeg";
+			height: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		*/
+	</style>
+</head>
+<body>
+	<div class="background" align="center">
+
+<h1>Hello Admin!</h1>
+
+<form method = "POST" action="" >
+	<h3>Student Statistics - Number of students in each course</h3>
+	<input type="submit" name="q1_submit" value="Go">
+	<br>
+	<h3>Number of students in each course -  Diversity Statistics</h3>
+	<label for="q2_category_label">Category:</label>
+	<select name="q2_category">
+		<option>region</option>
+		<option>gender</option>
+		<option>disabilit</option>
+		<option>final_result</option>
+	</select>
+	<input type="submit" name="q2_submit">
+	<br>
+	<h3>Number of credits taken statistics</h3>
+	<input type="submit" name="q3_submit" value="Go">
+    <br>
+	<h3>Return course result percentage (highest to lowest) </h3>
+	<label for="q5_category_label">Result:</label>
+	<select name="q5_final_result">
+		<option>Distinction</option>
+		<option>Pass</option>
+		<option>Fail</option>
+		<option>Withdrawn</option>
+	</select>
+	<input type="submit" name="q5_submit">
+    <br>
+	<h3>Pass percentage of courses</h3>
+	<input type="submit" name="q6_submit" value="Go">
+    <br>
+	<h3>Number of Students with Distinction</h3>
+    Distinction cutoff <input type="text" name="q6i_cutoff">
+	<input type="submit" name="q6i_submit" value="Go">
+	<br>
+	<h3>Enroll in course</h3>
+
+		{% for i in range(1,12) %}
+		{{enroll_args[i-1]}}: <input type="text" name={{'q9_%d'% i }}>
+		{% endfor %}
+<!--
+	code_module: <input type="text" name="q9_code_module">
+	code_presentation: <input type="text" name="q9_code_presentation">
+-->
+date of registration: <input type="text" name="q9_12">
+	<input type="submit" name="q9_submit">
+	<h3>Course Add-Remove Log file</h3>
+	<input type="submit" name="q10_submit" value="Go">
+	<br>
+	<br>
+	<input type="submit" value="Logout" name="back"></form>
+</div>
+</body>
